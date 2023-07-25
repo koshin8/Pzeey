@@ -7,20 +7,29 @@ class PostsController < ApplicationController
   end
 
   def show
+    @post = Post.find(params[:id])
   end
 
   def new
-    @post = Post.new
+    # @post = Post.new
+
+    @post = current_user.posts.build
   end
 
   def edit
   end
 
   def create
-    @post = Post.new(post_params)
+    # @post = Post.new(post_params)
 
+    # if @post.save
+    #   redirect_to @post, notice: 'Post was successfully created.'
+    # else
+    #   render :new
+    # end
+    @post = current_user.posts.build(post_params)
     if @post.save
-      redirect_to @post, notice: 'Post was successfully created.'
+      redirect_to @post, notice: '投稿が作成されました！！'
     else
       render :new
     end
@@ -45,8 +54,10 @@ class PostsController < ApplicationController
     end
 
     def post_params
-      params.require(:post).permit(:caption, images: [])
+    #   params.require(:post).permit(:caption, image:)
+      params.require(:post).permit(:body,:image)
     end
 
+    
 
 end
