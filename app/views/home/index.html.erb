@@ -1,6 +1,9 @@
 <div class="container">
   <h1>Hello!</h1>
   <p>遊びをシェアしてあそびを見つけよう！</p>
+  <%# <%= link_to '登録して 友達になる', new_user_registration_path, class: 'button' %> %>
+  <% unless user_signed_in? %>
   <%= link_to '登録して 友達になる', new_user_registration_path, class: 'button' %>
+  <% end %>
   <%= link_to '登録せずに閲覧する', posts_path %>
 </div>
