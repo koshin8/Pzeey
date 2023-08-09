@@ -1,10 +1,21 @@
 # PZeey
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+あそびをシェアするSNS
+ここにこれば遊びが見つかる！
 
 Things you may want to cover:
 
+## 使用技術
+### フロントエンド
+- Bootstrap 5 [Bootstrap Docs](https://getbootstrap.com/)
+- Rails
+### バックエンド
+ - Rails 7: ウェブアプリケーションフレームワーク
+ - Ruby 2.7
+ - Devise: 認証ライブラリ
+ - Active Storage: ファイルアップロード管理
+ - 
+### データベース
+  - MySQL: リレーショナルデータベース
 * Ruby version
 
 * System dependencies
