@@ -1,35 +1,24 @@
 # PZeey
 あそびをシェアするSNS
 ここにこれば遊びが見つかる！
+url
+## このサービスを作った思い
 
-Things you may want to cover:
+## Pzeeyについて
+### 一言サービスコンセプト
+ここにこれば遊びが見つかる！
+### 誰の課題を解決するのか？
+集まっているけど何するか決まっていない人たちやいろんな遊びや新しい趣味、新しい視点が欲しい人
+デートのプランが急に変更になった際にも！
+### どうやって解決するのか？
+色んな遊びの画像（ユーザーが投稿したもの）が出てくるので、そこから何をして遊ぶのかを参考にすることができる
 
 ## 使用技術
-### フロントエンド
-- Bootstrap 5 [Bootstrap Docs](https://getbootstrap.com/)
-- Rails
-### バックエンド
- - Rails 7: ウェブアプリケーションフレームワーク
- - Ruby 2.7
- - Devise: 認証ライブラリ
- - Active Storage: ファイルアップロード管理
- - 
+- Rails 7: ウェブアプリケーションフレームワーク
+- Ruby 2.7
+- Bootstrap 5
+- Devise: 認証ライブラリ
+- Active Storage: ファイルアップロード管理
 ### データベース
-  - MySQL: リレーショナルデータベース
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+AWS
+- MySQL: リレーショナルデータベース
