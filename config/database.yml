@@ -9,23 +9,23 @@
 # And be sure to use new-style password hashing:
 #   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
 #
-# default: &default
-#   adapter: mysql2
-#   encoding: utf8mb4
-#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-#   username: root
-#   password: nagoyan1
-#   host: origin-deploy-db.cwlbsudd7qdb.ap-northeast-1.rds.amazonaws.com
-
-#local db　デプロイするときはマイグレーションファイルを作成しないといけない
-
 default: &default
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: koshin
-  password: nagoyan
-  host: localhost
+  username: root
+  password: nagoyan1
+  host: origin-deploy-db.cwlbsudd7qdb.ap-northeast-1.rds.amazonaws.com
+
+#local db　デプロイするときはマイグレーションファイルを作成しないといけない
+
+# default: &default
+#   adapter: mysql2
+#   encoding: utf8mb4
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   username: koshin
+#   password: nagoyan
+#   host: localhost
 
 development:
   <<: *default
