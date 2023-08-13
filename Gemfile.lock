@@ -116,6 +116,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    libv8-node (16.19.0.1-arm64-darwin)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -128,6 +129,8 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_racer (0.6.4)
+      libv8-node (~> 16.19.0.0)
     minitest (5.18.1)
     msgpack (1.7.2)
     mysql2 (0.5.5)
@@ -254,10 +257,12 @@ DEPENDENCIES
   devise
   importmap-rails
   jbuilder
+  mini_racer
   mysql2 (~> 0.5)
   puma (~> 5.0)
   rails (~> 7.0.6)
   rails-controller-testing
+  sassc-rails
   selenium-webdriver
   sprockets-rails
   stimulus-rails
