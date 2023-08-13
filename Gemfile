@@ -77,3 +77,8 @@ gem 'bcrypt'
 gem 'rails-controller-testing'
 
 gem 'devise'
+
+#bootstrap
+gem 'bootstrap', '~> 5.0.2'
+#jquery
+# gem 'jquery-rails'
