@@ -12,7 +12,7 @@
 
 
 <div class="container">
-  <div class="row g-0">
+  <div class="row g-0 justify-content-center">
     <% @posts.each do |post| %>
       <div class="col-sm-4">
         <div class="card h-100">
@@ -32,6 +32,24 @@
   </div>
 </div>
 
+
+
+<%# <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">ユーザー情報
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><%= link_to 'ユーザープロフィール', edit_user_registration_path %></li>
+  <%# </ul>
+</div> %>
+
+<%# <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    ユーザー情報
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><%= link_to 'ユーザープロフィール', edit_user_registration_path %></li>
+  <%# </ul>
+</div> %> 
 <%# <% @posts.each do |post| %> 
   <%# <div>
     <strong>body:</strong>
@@ -41,25 +59,7 @@
       <%# <%= image_tag post.image %>
     <%# <% end %> %>
   <%# </div>
-  <%= link_to 'Show', post %> %> %>
-
-
-<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">ユーザー情報
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><%= link_to 'ユーザープロフィール', edit_user_registration_path %></li>
-  </ul>
-</div>
-
-<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    ユーザー情報
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><%= link_to 'ユーザープロフィール', edit_user_registration_path %></li>
-  </ul>
-</div>
+  <%= link_to 'Show', post %> 
 
 
     <%# <li><%= link_to 'Logout', destroy_user_session_path, method: :delete</li>

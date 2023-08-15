@@ -15,14 +15,22 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 
-.container {
-  /* width: 300px;
-     height: 300px; */
-  // border: 2px solid white;
-  background-color: black;
-  // text-align: center;
-  // height: 100vh;
+body {
+  background-color: whitesmoke;
+  // margin: 0;
+  // padding: 0;
 }
+
+// .container {
+//   /* width: 300px;
+//      height: 300px; */
+//   // border: 2px solid white;
+//   // background-color: black;
+//   // text-align: center;
+//   margin: 0;
+//   padding: 0;
+//   // height: 100vh;
+// }
 
 .post-item {
   padding-top: 100%; // 正方形のアスペクト比を保持
@@ -43,27 +51,7 @@
   padding: 0.5rem 1rem; /* ここでパディングを調整 */
 }
 
-// h1 {
-//   font-size: 24px;
-// }
-
-// p {
-//   font-size: 16px;
-// }
-
-// .button {
-//   display: inline-block;
-//   padding: 10px 20px;
-//   background-color: white;
-//   border-radius: 20px;
-// }
-
-// @media screen and (max-width: 600px) {
-//   .container {
-//     width: 100%;
-//   }
-// }
-
-/* .container {
-  display: flex;
-} */
+.enlarged {
+  transform: scale(1.5);
+  transition: transform 0.5s; /* アニメーション効果 */
+}

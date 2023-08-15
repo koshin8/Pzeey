@@ -1,9 +1,10 @@
-<div class="container">
-  <h1>Hello!</h1>
-  <p>遊びをシェアしてあそびを見つけよう！</p>
-  <%# <%= link_to '登録して 友達になる', new_user_registration_path, class: 'button' %> %>
-  <% unless user_signed_in? %>
-  <%= link_to '登録して 友達になる', new_user_registration_path, class: 'button' %>
-  <% end %>
-  <%= link_to '登録せずに閲覧する', posts_path %>
+<div class="container text-center">
+  <h1 class="display-4">Hello!</h1>
+  <p class="lead">遊びをシェアしてあそびを見つけよう！</p>
+  <div class="d-flex justify-content-center gap-2">
+    <% unless user_signed_in? %>
+    <a href="<%= new_user_registration_path %>" class="btn btn-info btn-lg mb-2">登録して投稿する</a>
+    <% end %>
+    <a href="<%= posts_path %>" class="btn btn-warning btn-lg mb-2">まずは閲覧</a>
+  </div>
 </div>
