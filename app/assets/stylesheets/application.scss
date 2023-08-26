@@ -16,9 +16,14 @@
 @import "bootstrap";
 
 body {
-  background-color: whitesmoke;
+  background-color: white;
   // margin: 0;
   // padding: 0;
+}
+
+.nav-icon {
+  font-size: 150%; /* アイコンのサイズを変更 */
+  vertical-align: middle; /* アイコンの垂直位置を中央に調整 */
 }
 
 // .container {
@@ -54,4 +59,17 @@ body {
 .enlarged {
   transform: scale(1.5);
   transition: transform 0.5s; /* アニメーション効果 */
+}
+
+.modal-backdrop.show {
+  opacity: 0.9;
+  backdrop-filter: blur(5px); /* ここでぼかしの効果を追加 */
+}
+
+.modal-dialog.modal-xl {
+  max-width: 45%; /* モーダルの最大幅を1/3に設定 */
+}
+
+.modal-body .square-image-container img {
+  transform: none; /* 1.5倍の拡大を無効にする */
 }
